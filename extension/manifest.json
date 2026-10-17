@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "图采集 ImageGrab · 电商图片下载",
+  "version": "1.0.0",
+  "description": "提取电商商品详情页中的图片，筛选预览、自由勾选，并批量转换为 PNG 下载。",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "host_permissions": [
+    "*://*.taobao.com/*", "*://*.tmall.com/*", "*://*.jd.com/*",
+    "*://*.pinduoduo.com/*", "*://*.yangkeduo.com/*",
+    "https://*.alicdn.com/*", "https://*.360buyimg.com/*", "https://*.jdimg.com/*",
+    "https://*.pddpic.com/*", "https://*.pinduoduoimg.com/*", "https://*.pddcdn.com/*"
+  ],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_popup": "popup.html", "default_title": "图采集 ImageGrab"},
+  "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"},
+  "content_scripts": [{
+    "matches": ["*://*.taobao.com/*", "*://*.tmall.com/*", "*://*.jd.com/*", "*://*.pinduoduo.com/*", "*://*.yangkeduo.com/*"],
+    "js": ["content.js"], "run_at": "document_idle"
+  }]
+}

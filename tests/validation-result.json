@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "img + data-src + background extraction, duplicate removal, 20px icon filtered: 6 unique images",
+    "select all, invert, individual selection, only-selected and 600px size filter",
+    "4 browser downloads completed from mixed JPG/WebP/PNG sources; PNG signatures and 600×600 IHDR verified",
+    "HTTP 404 correctly returned as a failed download",
+    "no floating button on a non-product page",
+    "website 320/768/1440px layout and mobile navigation",
+    "static website opens from file:// without a build or CDN"
+  ],
+  "provenance": "Actual extension in isolated Edge, controlled locally served product fixture with original SVG illustrations. Not a live JD merchant page.",
+  "extensionId": "cplpkjlpcdjdkjlpndjlpelbnpfmkbhi",
+  "downloads": [
+    "商品图_004.png",
+    "商品图_003.png",
+    "商品图_002.png",
+    "商品图_001.png"
+  ],
+  "errors": [],
+  "downloadErrors": [],
+  "ok": true
+}
